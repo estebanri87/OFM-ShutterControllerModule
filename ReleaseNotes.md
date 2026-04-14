@@ -1,3 +1,9 @@
+v 0.6.1
+- Feature: Positionsprüfung im Status „Beschattung Bereit (Benutzer)" – Beschattungsbereitschaft wird nur signalisiert, wenn die aktuelle Zielposition ≤ dem konfigurierten Grenzwert „Nur wenn Position kleiner als" ist
+- Feature: KO-Freigabe-Parameter je Kanal – alle optionalen KOs können nun einzeln in der ETS ein-/ausgeblendet werden (Sperren Kanal, Status aktiver Modus, Aktorrückmeldung, Beschattung ein/aus, Beschattung aktiv, Beschattungsbereitschaft, Handbetrieb Schalten, Handbetrieb Position, Fenster offen/gekippt Status und Sperren)
+- Feature: KO-Freigabe-Parameter je Beschattungsmodus – Sperren, Status Aktiv und Status Bereitschaft je Beschattungsmodus separat freigebbar
+- Feature: KO-Freigabe-Parameter je Fensterkontakt – Status und Sperren für Fenster offen / Fenster gekippt separat freigebbar
+- Rename: KO-Freigabe-Parameter für Beschattungsmodus konsistent benannt (PPP+53 = Sperren freigeben, PPP+54 = Bereitschaft freigeben, PPP+55 = Status Aktiv freigeben)
 v 0.6.0
 - Refactor: "Helligkeit" (bool) + "Weitere Helligkeitssensoren" (count) zusammengefasst zu "Helligkeitssensoren" (Enum: Nein/1-5 Sensoren)
 - Rename: "Helligkeit Sensor 1..5" -> "Ausrichtung Sensor 1..5"
